@@ -27,7 +27,9 @@ Feel free to use this as a starting point when building your own API.
 2. Use Postman to check each of the API URLs. The responses should be intuitive:
 
     a.  GET http://localhost:3000/
+    
     b.  GET http://localhost:3000/api/courses
+    
     c.  POST http://localhost:3000/api/courses
             raw -> JSON input for the post
             {
@@ -35,8 +37,11 @@ Feel free to use this as a starting point when building your own API.
             }
 
             TIP: Rerun 2.b to confirm value was added
+            
     d.  GET http://localhost:3000/api/courses/1
+    
     e.  PUT http://localhost:3000/api/courses/1
+    
             raw -> JSON input for the post
             {
                 "name": "coursea 1"
@@ -44,18 +49,26 @@ Feel free to use this as a starting point when building your own API.
 
             TIP: Rerun 2.b to confirm value was updated
     f.  DELETE http://localhost:3000/api/courses/1
+    
             TIP: Rerun 2.b to confirm value was deleted
     g.  GET http://localhost:3000/api/hipster-ipsum
+    
             This is an example of a third-party API fetch and response.
 
 3. To add Auth0, which enforces security credentials, you'll need to follow some tutorials first. If this is your first time, go ahead and do some reading since security is important and understanding what you're doing will save hours of frustration later.
 
     a. Tutorials
+    
         i.      https://auth0.com/docs/quickstart/backend/nodejs/01-authorization
+        
         ii.     https://auth0.com/docs/quickstart/backend/nodejs/02-using
+        
         iii.    https://auth0.com/docs/get-started/create-apps/machine-to-machine-apps
+        
     b. Validate set-up
+    
         GET http://localhost:3000/secure
+        
             header->Authorization (Bearer token as noted in the tutorial 3.a.ii above)
 
 # Contact Me
@@ -67,5 +80,7 @@ Feel free to reach out on Twitter, @elliotkoss. DMs open.
 I intend to always keep this freely available, but if you'd like to send a donation, I'd be much appreciative.
 
 ETH: elliotkoss.eth (ETH only set-up for this ENS - adding more wallets later)
+
 Venmo: @Elliot-Koss
+
 Cash App: $elliotkoss1
