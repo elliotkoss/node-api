@@ -1,13 +1,12 @@
 {
-  "name": "hashlips_art_engine",
-  "version": "1.0.0",
-  "description": "HashLips Art Engine is a tool used to create multiple different instances of artworks based on provided layers.",
+  "name": "elliotkoss_node_api",
+  "version": "0.0.1",
+  "description": "Simple Node API",
   "main": "index.js",
   "scripts": {
-    "build": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "author": "Daniel Eugene Botha (HashLips)",
+  "author": "Elliot Koss",
   "license": "MIT",
   "dependencies": {
     "all": "^0.0.0",
