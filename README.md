@@ -4,7 +4,7 @@
 
 ### Notes
 
-##### To Do
+#### To Do
 
 1. Add nodemon to Docker so that docker doesn't require a start and stop every time.
 
@@ -114,12 +114,6 @@ Having an issue with localhost not working.
 
 - Double check that you have input the port correctly. You have to use port 8080 (unless you changed the port value in the API). The 8080 port allows the API to move data in/out of the app server on your local machine. So you have to use port 8080. This is a completely different experience than using Docker.
 
-# Version History 
-
-#### v0.0.1 - Oct 17, 2021
-
-Hello World! I built a Node JS API using Express for routes, Auth0 for security, and Axios to execute a third-party API call. I watched this [great Node tutorial](https://www.youtube.com/watch?v=pKd0Rpw7O48), read the Auth0 docs, and then used Postman's sample Node code plus some Googling to determine Axios was the right library for API calls.
-
 # Contact Me
 
 Feel free to reach out on Twitter, @elliotkoss. DMs open.
@@ -131,3 +125,13 @@ I intend to always keep this freely available, but if you'd like to send a donat
 ETH: elliotkoss.eth (ETH only set-up for this ENS - adding more wallets later)
 Venmo: @Elliot-Koss
 Cash App: $elliotkoss1
+
+# Version History 
+
+#### Note to self
+
+Use `npm i --package-lock-only` to update the package-lock version before releasing.
+
+#### v0.0.1 - Oct 17, 2021
+
+Hello World! I built a Node JS API using Express for routes, Auth0 for security, and Axios to execute a third-party API call. I watched this [great Node tutorial](https://www.youtube.com/watch?v=pKd0Rpw7O48), read the Auth0 docs, and then used Postman's sample Node code plus some Googling to determine Axios was the right library for API calls.
