@@ -19,10 +19,12 @@
 #### v0.0.3 - Oct 23, 2021
 
 - Add nodemon so that Docker doesn't require a restart for every change. (Oct 23, 2021)
+- Add MySQL database to Docker (Oct 23, 2021)
 
 ##### Useful Tutorials
 
 - https://dzone.com/articles/how-to-develop-your-nodejs-docker-applications-fas
+- https://dev.to/frasnym/how-to-create-dockerized-nodejs-with-mysql-database-1o44
 
 # Getting Started
 
@@ -34,6 +36,8 @@ Feel free to use this as a starting point when building your own API.
 
 ### Using Docker
 
+0. Set-up your .env file by RENAMING the .envEXAMPLE to .env
+
 1. In Visual Studio Code (or navigate to the directory), build the image using this command. It will build the server image from the directory and tag your image so that you can identify it if needed.
 
     `docker build . -t <user/node-api>`
@@ -44,11 +48,13 @@ Feel free to use this as a starting point when building your own API.
 
 3. Go to localhost:8080. You should see 'Hello World'. If you do not, you may need to troubleshoot. More on that below in 'Troubleshooting'.
 
-4. When you're ready to stop your docker container, you need to first determine the container's ID. Enter:
+4. Test your MySQL connection by connecting to 127.0.0.1 at port 3306 with username=user and password=password. I use MySQLWorkbench as my querying tool, which makes testing this connection easy.
+
+5. When you're ready to stop your docker container, you need to first determine the container's ID. Enter:
 
     `docker ps`
 
-5. You should see the name of your Image along with a Container ID. Use the Container ID in the next command to stop the container:
+6. You should see the name of your Image along with a Container ID. Use the Container ID in the next command to stop the container:
 
     `docker stop <Container ID>`
 
