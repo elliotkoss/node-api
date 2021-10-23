@@ -37,7 +37,7 @@ const courses = [
 ];
 
 app.get('/', (req, res) => {
-  res.send('hello world');
+  res.send('hello world3');
 });
 
 app.get('/secure', checkJwt, (req, res) => {
